@@ -1,5 +1,5 @@
-function Form() {
-    const handleSubmit = (event: any) =>{
+export function Form() {
+    const handleSubmit = (event: any) => {
         event.preventDefault();
         // reset Формы
         event.target.reset();
@@ -7,11 +7,11 @@ function Form() {
     return (
         <form className="form" onSubmit={handleSubmit}>
             <label htmlFor="todo">
-                <input 
-                type="text"
-                name="todo"
-                id="todo"
-                placeholder="write your next task"
+                <input
+                    type="text"
+                    name="todo"
+                    id="todo"
+                    placeholder="write your next task"
                 />
             </label>
             <button>
@@ -24,8 +24,7 @@ function Form() {
     );
 }
 
-export default Form;
 
 
-// Почему-то VSC плохо реагирует на самописный svg, 
+// Почему-то VSC плохо реагирует на самописный svg,
 // всё норм при копировании

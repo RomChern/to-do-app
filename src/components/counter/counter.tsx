@@ -1,6 +1,6 @@
+type TProps = { todos_completed: number, total_todos: number }
 
-function TODOHero ({todos_completed, total_todos}:
-    {todos_completed: number, total_todos:number }) {
+export function Counter({ todos_completed, total_todos }: TProps) {
     return (
         <section>
             <div>
@@ -13,7 +13,6 @@ function TODOHero ({todos_completed, total_todos}:
         </section>
     );
 }
-export default TODOHero;
 
 
 //Вопрос по записи типизации, а именно как выглядит типизация

@@ -1,4 +1,4 @@
-function Header() {
+export function Header() {
     return (
       <>
         <svg>
@@ -8,5 +8,3 @@ function Header() {
       </>
     );
   }
-
-export default Header;

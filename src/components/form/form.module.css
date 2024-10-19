@@ -1,0 +1,29 @@
+.form {
+    align-self: center;
+    width: 97%;
+    max-width: 455px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 38px;
+    }
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    }
+.form input {
+    background-color: #1f2937;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 11px;
+    padding: 12px;
+    }

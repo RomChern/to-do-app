@@ -1,20 +1,33 @@
-export function Form() {
-    const handleSubmit = (event: any) => {
+import "../../styles.css";
+import style from "./form.module.css"
+import { TTodo } from "../../types";
+import { useState } from "react";
+
+type TProps = { addToDo: (title: TTodo["title"]) => void }
+
+export function Form({ addToDo }: TProps) {
+    const [value, setValue] = useState("")
+
+    const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
         event.preventDefault();
         // reset Формы
-        event.target.reset();
+        addToDo(value);
+        setValue("");
     };
+
     return (
-        <form className="form" onSubmit={handleSubmit}>
+        <form className={style.form} onSubmit={handleSubmit} >
             <label htmlFor="todo">
                 <input
+                    onChange={(e) => setValue(e.target.value)}
+                    value={value}
                     type="text"
                     name="todo"
                     id="todo"
                     placeholder="write your next task"
                 />
             </label>
-            <button>
+            <button disabled={value === ""}>
                 <span className="visually-hidden">Submit</span>
                 <svg>
                     <path d="" />

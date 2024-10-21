@@ -5,10 +5,10 @@ type TProps = { todos_completed: number, total_todos: number }
 
 export function Counter({ todos_completed, total_todos }: TProps) {
     return (
-        <section className={styles.test}>
+        <section className={styles.section}>
             <div>
-                <p>Task Done</p>
-                <p>Keep it up</p>
+                <p className={styles.textLarge}>Task Done</p>
+                <p className={styles.textSmall}>Keep it up</p>
             </div>
             <div>
                 {todos_completed}/{total_todos}
@@ -16,7 +16,3 @@ export function Counter({ todos_completed, total_todos }: TProps) {
         </section>
     );
 }
-
-
-//Вопрос по записи типизации, а именно как выглядит типизация
-// вне параметров функции

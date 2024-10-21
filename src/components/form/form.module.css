@@ -6,8 +6,9 @@
     align-items: center;
     gap: 12px;
     margin-top: 38px;
-    }
-.visually-hidden {
+}
+
+.visuallyHidden {
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px);
     padding: 0 !important;
@@ -16,7 +17,8 @@
     width: 1px !important;
     overflow: hidden;
     white-space: nowrap;
-    }
+  }
+
 .form input {
     background-color: #1f2937;
     color: #fff;
@@ -26,4 +28,11 @@
     border: none;
     border-radius: 11px;
     padding: 12px;
-    }
+}
+.form button {
+    width: 10%;
+    height: 50px;
+    border-radius: 11px;
+    background-color: #88ab33;
+    border: none;
+  }

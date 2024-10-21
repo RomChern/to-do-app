@@ -1,0 +1,35 @@
+.todoItemsLeft {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.todoItemsRight {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.visuallyHidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.todoItemsRight button {
+    background-color: transparent;
+    border: none;
+}
+
+.todoItemsRight button svg {
+    fill: #c2b39a;
+}
